@@ -1,0 +1,106 @@
+{
+  "extends": ["next/core-web-vitals", "eslint-config-prettier"],
+  "plugins": ["unicorn", "unused-imports", "perfectionist"],
+  "rules": {
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1,
+        "maxEOF": 0
+      }
+    ],
+
+    // "@typescript-eslint/no-explicit-any": "warn",
+    // "@typescript-eslint/ban-types": "warn",
+    // "@typescript-eslint/explicit-function-return-type": "off",
+    // "@typescript-eslint/explicit-module-boundary-types": "off",
+    // "@typescript-eslint/no-unused-vars": "off",
+    // "@typescript-eslint/no-empty-function": "off",
+    // "@typescript-eslint/naming-convention": [
+    //   "warn",
+    //   {
+    //     "selector": ["enumMember"],
+    //     "format": ["UPPER_CASE"]
+    //   },
+    //   {
+    //     "selector": ["enum", "typeLike", "interface"],
+    //     "format": ["PascalCase"]
+    //   },
+    //   {
+    //     "selector": "variableLike",
+    //     "format": ["PascalCase", "camelCase", "UPPER_CASE"],
+
+    //     "filter": {
+    //       "regex": "\\d+",
+    //       "match": false
+    //     },
+
+    //     "leadingUnderscore": "allow"
+    //   },
+    //   {
+    //     "selector": "parameter",
+    //     "format": ["camelCase", "PascalCase"],
+    //     "leadingUnderscore": "allow"
+    //   },
+    //   {
+    //     "selector": "parameter",
+    //     "format": null,
+
+    //     "filter": {
+    //       "regex": "^_$",
+    //       "match": true
+    //     }
+    //   }
+    // ],
+
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "warn",
+    "no-constant-condition": "warn",
+    "no-empty-pattern": "warn",
+
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+
+    "semi": ["error", "always"],
+    "perfectionist/sort-imports": "warn",
+    "perfectionist/sort-named-imports": "warn",
+    "perfectionist/sort-objects": "off",
+    "perfectionist/sort-object-types": "off",
+    "perfectionist/sort-enums": "off",
+    "perfectionist/sort-interfaces": "off",
+    "perfectionist/sort-union-types": "off",
+    "perfectionist/sort-named-exports": "warn",
+    "perfectionist/sort-classes": "off",
+    "perfectionist/sort-switch-case": "off",
+    "perfectionist/sort-intersection-types": "off",
+    "perfectionist/sort-array-includes": "off",
+    "no-case-declarations": "off",
+    "no-empty": "off",
+
+    "unicorn/filename-case": [
+      "warn",
+      {
+        "cases": {
+          "camelCase": true,
+          "pascalCase": true,
+          "kebabCase": true
+        }
+      }
+    ],
+
+    "new-cap": [
+      "warn",
+      {
+        "newIsCap": true,
+        "capIsNew": false
+      }
+    ]
+  }
+}
